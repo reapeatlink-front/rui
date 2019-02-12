@@ -1,0 +1,73 @@
+{
+  "name": "rui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Design UI library for React and Antd",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "author": "repeatlink",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reapeatlink-front/rui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reapeatlink-front/rui/issues"
+  },
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "homepage": "https://github.com/reapeatlink-front/rui",
+  "keywords": [
+    "rui",
+    "antd",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "scripts": {
+    "_comment1": "build:commonjs 为构建commonJS版",
+    "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/ --ignore **/__tests__,**/__mocks__",
+    "_comment2": "build:esm 为构建es module版",
+    "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
+    "_comment3": "下面2行为机构化复制css文件，因为我们使用原生css，直接复制即可",
+    "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
+    "copy-css:lib": "cpx \"src/components/**/*.css\" lib",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "2.1.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.2.0"
+  }
+}
