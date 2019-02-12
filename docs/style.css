@@ -17,6 +17,12 @@ header {
   padding: 0 100px;
   line-height: 80px;
 }
+header,main{
+  overflow: hidden;
+}
+main{
+  padding-bottom: 50px;
+}
 
 header a {
   float: right;
@@ -55,17 +61,15 @@ header a {
 
 #moveWrap {
   position: absolute;
-  left: calc(50% - 270px);
+  left: calc(50% - 120px);
   top: 250px;
   transform: translate(0px, 0px);
   transition: transform 20ms;
 }
 
 .describeWrap {
-  margin: 0 auto;
-  margin-top: 450px;
+  margin: 450px auto 0px;
 }
-
 .describeWrap h1 {
   font-size: 35px;
   text-align: center;
@@ -76,6 +80,7 @@ header a {
   margin: 0 auto;
   text-align: center;
   margin-top: 100px;
+  padding-bottom: 20px;
 }
 
 .startBtn {
