@@ -1,17 +1,22 @@
 ---
 name: RInput
-menu: components
+menu: 组件
 ---
 
 import { Playground, PropsTable } from 'docz'
-import RInput from './index.jsx'
+import RInput from './index';
+
 
 # RInput
 
 <PropsTable of={RInput} />
 
-## Basic usage
+## 效果展示
 
 <Playground>
- <RInput></RInput>
+ <RInput onFocus={()=>{
+            console.log("focus....")
+         }}
+         helper="我是提示框"/>
 </Playground>
+

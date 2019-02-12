@@ -5,7 +5,7 @@ export default {
     description: 'A Design UI library for React',
     themeConfig:{
         colors:{
-            primary:"green",
+            primary:"red",
         }
     },
     plugins: [
