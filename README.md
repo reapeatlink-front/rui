@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="http://github.com/zuiidea/antd-admin">
+  <a href="https://reapeatlink-front.github.io/rui/">
     <img alt="antd-admin" height="30" src="https://www.repeatlink.cn/assets/img/logo_blue.png">
   </a>
 </p>
@@ -21,10 +21,9 @@ A excellent front-end solution for enterprise applications.
 
 </div>
 
-- Preview - [https://antd-admin.zuiidea.com](https://antd-admin.zuiidea.com)
-- Documentation - [https://doc.antd-admin.zuiidea.com](https://doc.antd-admin.zuiidea.com)
-- FAQ - [https://doc.antd-admin.zuiidea.com/#/faq](https://doc.antd-admin.zuiidea.com/#/faq)
-- ChangeLog - [https://doc.antd-admin.zuiidea.com/#/change-log](https://doc.antd-admin.zuiidea.com/#/change-log)
+- Preview - [https://reapeatlink-front.github.io/rui/](https://reapeatlink-front.github.io/rui/)
+- Documentation - [https://reapeatlink-front.github.io/rui/](https://reapeatlink-front.github.io/rui/)
+- Issues - [https://github.com/reapeatlink-front/rui/issues](https://github.com/reapeatlink-front/rui/issues)
 
 English | [简体中文](./README-zh_CN.md) 
 
@@ -45,7 +44,7 @@ git clone https://github.com/reapeatlink-front/rui.git
 ```
 
 
-> More instructions at [documentation](https://doc.antd-admin.zuiidea.com)。
+> More instructions at [documentation](https://reapeatlink-front.github.io/rui/)。
 
 
 ## Browsers support
