@@ -25,7 +25,7 @@
 - 文档 - [https://reapeatlink-front.github.io/rui/](https://reapeatlink-front.github.io/rui/)
 - Issues - [https://github.com/reapeatlink-front/rui/issues](https://github.com/reapeatlink-front/rui/issues)
 
-English | [简体中文](./README-zh_CN.md) 
+ 简体中文| [English](./README-zh_CN.md) 
 
 ## 特征
 
