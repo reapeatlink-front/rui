@@ -1,0 +1,23 @@
+---
+name: 带提示数字输入框
+menu: 组件
+---
+
+import { Playground, PropsTable } from 'docz'
+import RNumberInput from './index';
+
+
+# RNumberInput
+
+<PropsTable of={RNumberInput} />
+
+## 效果展示
+
+<Playground>
+ <RNumberInput onFocus={()=>{ console.log("focus....") }}
+         helper="我是提示框"/>
+
+         <RNumberInput min={10} max={20} onFocus={()=>{ console.log("focus....") }}
+                  helper="我是提示框"/>
+</Playground>
+
