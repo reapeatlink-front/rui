@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import RInput from '../RInput';
 import { Button } from "antd" ;
 import PropTypes from 'prop-types';
+import { SEPARATOR } from "../const";
 
 /**
  * 邮编输入组件
@@ -130,5 +131,5 @@ RZipCode.defaultProps = {
     inputProps:{},
     onChange:null,
     value:"",
-    split:"-"
+    split:SEPARATOR
 };
