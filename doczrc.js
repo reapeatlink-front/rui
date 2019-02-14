@@ -3,6 +3,9 @@ import { css } from 'docz-plugin-css'
 export default {
     title: 'RUI',
     description: 'A Design UI library for React',
+    htmlContext: {
+        favicon: 'public/favicon.ico'
+    },
     themeConfig:{
         colors:{
             primary:"red",
