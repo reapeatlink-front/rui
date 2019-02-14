@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
-let { lang } = window;
+import { formatMoney,formatNumber } from '../utils/utils' ;
+import { FORMATTYPE } from "../utils/const";
 
 /**
  * 格式化组件
@@ -10,51 +10,14 @@ export default class RFormat extends Component {
 
   number() {
     let { title } = this.props;
-    let symbol = "" ; // 用来区分正负数
-    if(isNaN(title)){
-      return title ;
-    }
-    if (title) {
-      symbol = +title>0?"":"-" ;
-      title = title
-        .toString()
-        .split('')
-        .reverse()
-        .join('');
-      title = title.match(/[0-9]{1,3}/gi).join(',');
-      title = title
-        .toString()
-        .split('')
-        .reverse()
-        .join('');
-      return symbol+title;
-    } else {
-      return '0';
-    }
+    return formatNumber(title);
   }
   money() {
-    let {title, lang } = this.props;
-    let currency = lang.common.currency || '';
-    if(isNaN(title)){
-      return title ;
-    }
-    return currency + this.number();
+      let { title } = this.props;
+      return formatMoney(title) ;
   }
   text() {
     return this.props.title;
-  }
-  date() {
-    let { title } = this.props;
-    return moment(title).format('YYYY-MM-DD');
-  }
-  dateTime() {
-    let { title } = this.props;
-    return moment(title).format('YYYY-MM-DD hh:mm:ss');
-  }
-  customer() {
-    let { lang } = this.props;
-    let customer = lang.common.customer || '';
-    return this.number() + customer;
   }
   get title() {
     let { type } = this.props;
@@ -65,8 +28,10 @@ export default class RFormat extends Component {
   }
 }
 RFormat.propTypes = {
+    /** 所需要格式化的文本 */
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    type: PropTypes.oneOf(['number', 'money', 'text', 'date', 'dateTime', 'customer']),
+    /** 格式化的类型 eg. 'number', 'money', 'text' */
+    type: PropTypes.oneOf(FORMATTYPE),
 };
 RFormat.defaultProps = {
     type: 'text',

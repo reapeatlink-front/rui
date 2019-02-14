@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import { SIZE,getPaddingSize } from "../utils/const";
+import { SIZE } from "../utils/const";
 import PropTypes from 'prop-types';
-
+import { getPaddingSize } from "../utils/utils";
 /**
  * 邮编输入组件
  */

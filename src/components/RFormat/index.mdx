@@ -1,0 +1,29 @@
+---
+name: RFormat 数据格式化
+menu: 组件
+---
+
+import { Playground, PropsTable } from 'docz'
+import RFormat from "./index";
+
+
+
+# RText
+
+<PropsTable of={RFormat} />
+
+## 效果展示
+
+<Playground>
+    <RFormat title="5000" />
+    <br/>
+    <RFormat title={5000} type="number"/>
+    <br/>
+    <RFormat title={"-5000"} type="number"/>
+    <br/>
+    <RFormat title="5000" type="money"/>
+    <br/>
+    <RFormat title="-5000" type="money"/>
+        <br/>
+</Playground>
+
