@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { SIZE,getPaddingSize } from "../const";
+import { SIZE,getPaddingSize } from "../utils/const";
 import PropTypes from 'prop-types';
 
 /**

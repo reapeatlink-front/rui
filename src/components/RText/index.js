@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { SIZE,getFontSize } from "../const";
+import { SIZE,getFontSize } from "../utils/const";
 import PropTypes from 'prop-types';
 
 /**

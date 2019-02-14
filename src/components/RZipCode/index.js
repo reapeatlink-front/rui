@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import RInput from '../RInput';
 import { Button } from "antd" ;
 import PropTypes from 'prop-types';
-import { SEPARATOR } from "../const";
+import { SEPARATOR } from "../utils/const";
 
 /**
  * 邮编输入组件
