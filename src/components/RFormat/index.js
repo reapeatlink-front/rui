@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { formatMoney,formatNumber } from '../utils/utils' ;
-import { FORMATTYPE } from "../utils/const";
+import { FORMAT_TYPE as FORMATTYPE } from "../utils/const";
 
 /**
  * 格式化组件

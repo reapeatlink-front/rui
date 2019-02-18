@@ -1,0 +1,57 @@
+---
+name: RBaseTable 表格组件
+menu: 组件
+route: /RBaseTable
+---
+
+import { Playground, PropsTable } from 'docz'
+import RBaseTable from "./index";
+
+# RBaseTable
+
+<PropsTable of={RBaseTable} />
+
+## 效果展示
+
+<Playground>
+    <div>普通表格：</div>
+    <RBaseTable renderOperation={ ()=><button type="button">点我提交</button> }
+                operationText="操作列"
+                columns={[{
+                          title: '商品名称',
+                          dataIndex: 'name',
+                          key: 'name',
+                          _format:"text"
+                        }, {
+                          title: '价格',
+                          dataIndex: 'price',
+                          key: 'age',
+                          _format:"money"
+                        }, {
+                          title: '销售量',
+                          dataIndex: 'count',
+                          key: 'count',
+                          _format:"number"
+                        }, {
+                                                   title: '书本状态',
+                                                   dataIndex: 'status',
+                                                   key: 'status',
+                                                   _format:"status"
+                                                 }]}
+                                                 onPageChange={params=>console.log(params)}
+                        dataSource={[{
+                                       key: '1',
+                                       name: 'java入门到放弃',
+                                       price: 3252,
+                                       count: 45000,
+                                       status:true
+                                     }, {
+                                       key: '2',
+                                       name: 'JavaScript入门到放弃',
+                                       price: 4263,
+                                       count: 50020,
+                                       status:0
+                                     }]}/>
+    <br/>
+</Playground>
+

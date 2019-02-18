@@ -1,0 +1,58 @@
+---
+name: RSortTable 拖拽表格组件
+menu: 组件
+route: /RSortTable
+---
+
+import { Playground, PropsTable } from 'docz'
+import { RSortTable } from "./index";
+import { MDSortTable } from "./SortTable"
+
+# RSortTable
+
+<PropsTable of={MDSortTable} />
+
+## 效果展示
+
+<Playground>
+    <div>拖拽排序表格：</div>
+    <RSortTable renderOperation={ ()=><button type="button">点我提交</button> }
+                        onSort = { (...args)=>console.log(args) }
+                        operationText="操作列"
+                        columns={[{
+                                  title: '商品名称',
+                                  dataIndex: 'name',
+                                  key: 'name',
+                                  _format:"text"
+                                }, {
+                                  title: '价格',
+                                  dataIndex: 'price',
+                                  key: 'age',
+                                  _format:"money"
+                                }, {
+                                  title: '销售量',
+                                  dataIndex: 'count',
+                                  key: 'count',
+                                  _format:"number"
+                                }, {
+                                                           title: '书本状态',
+                                                           dataIndex: 'status',
+                                                           key: 'status',
+                                                           _format:"status"
+                                                         }]}
+                                                         onPageChange={params=>console.log(params)}
+                                dataSource={[{
+                                               key: '1',
+                                               name: 'java入门到放弃',
+                                               price: 3252,
+                                               count: 45000,
+                                               status:true
+                                             }, {
+                                               key: '2',
+                                               name: 'JavaScript入门到放弃',
+                                               price: 4263,
+                                               count: 50020,
+                                               status:0
+                                             }]}/>
+</Playground>
+

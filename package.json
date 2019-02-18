@@ -57,6 +57,8 @@
     "moment": "^2.24.0",
     "prop-types": "^15.7.1",
     "react": "^16.8.1",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.5"
   },

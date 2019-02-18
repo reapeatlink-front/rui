@@ -1,9 +1,9 @@
 // 获取字体大小
-import {FONTSIZE, PADDINGSIZE,NUMBERSEPARATOR,CURRENCY } from "./const";
+import {FONT_SIZE, PADDING_SIZE,NUMBER_SEPARATOR,CURRENCY } from "./const";
 
-export const getFontSize = (size ="sm")=> FONTSIZE[size] || FONTSIZE["sm"];
+export const getFontSize = (size ="sm")=> FONT_SIZE[size] || FONT_SIZE["sm"];
 // 获取两翼留白大小
-export const getPaddingSize = (size = "sm")=>PADDINGSIZE[size] || PADDINGSIZE["sm"];
+export const getPaddingSize = (size = "sm")=>PADDING_SIZE[size] || PADDING_SIZE["sm"];
 /**
  * 数字格式化
  * @param number
@@ -18,7 +18,7 @@ export const formatNumber = (number)=>{
     if (number) {
         symbol = +number>0?"":"-" ;
         number = number.toString().split('').reverse().join('');
-        number = number.match(/[0-9]{1,3}/gi).join(NUMBERSEPARATOR);
+        number = number.match(/[0-9]{1,3}/gi).join(NUMBER_SEPARATOR);
         number = number.toString().split('').reverse().join('');
         return symbol+number;
     } else {
@@ -31,7 +31,6 @@ export const formatMoney = (money)=>{
     }
     return CURRENCY + formatNumber(money);
 };
-
 export default {
     getFontSize,
     getPaddingSize,
