@@ -21,8 +21,8 @@
 
 </div>
 
-- 预览 - [https://reapeatlink-front.github.io/rui/](https://reapeatlink-front.github.io/rui/)
-- 文档 - [https://reapeatlink-front.github.io/rui/](https://reapeatlink-front.github.io/rui/)
+- 预览 - [https://reapeatlink-ui.netlify.com/](https://reapeatlink-ui.netlify.com/)
+- 文档 - [https://reapeatlink-ui.netlify.com/](https://reapeatlink-ui.netlify.com/)
 - Issues - [https://github.com/reapeatlink-front/rui/issues](https://github.com/reapeatlink-front/rui/issues)
 
  简体中文| [English](./README-zh_CN.md) 
@@ -44,7 +44,7 @@ git clone https://github.com/reapeatlink-front/rui.git
 ```
 
 
-> 更多信息参见[文档](https://reapeatlink-front.github.io/rui/)。
+> 更多信息参见[文档](https://reapeatlink-ui.netlify.com/)。
 
 
 ## 浏览器支持
