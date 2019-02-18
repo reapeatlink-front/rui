@@ -3,6 +3,7 @@ import BaseTable from './BaseTable';
 import { DragDropContext, DragSource, DropTarget } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import PropTypes from 'prop-types';
+import _ from "lodash" ;
 
 function dragDirection(
     dragIndex,
@@ -123,7 +124,7 @@ class SortTable extends React.Component {
         let prevDataSource = JSON.parse(JSON.stringify(this.state.dataSource)) ;
         let dataSource = this.switchIndex(dragIndex, hoverIndex);
         this.setState({ dataSource },()=>{
-            this.props.onSort(dragIndex, hoverIndex,dataSource,prevDataSource);
+            this.props.onSort(dragIndex, hoverIndex,_.cloneDeep(dataSource),_.cloneDeep(prevDataSource));
         });
     };
     render() {

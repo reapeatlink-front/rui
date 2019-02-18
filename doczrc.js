@@ -8,7 +8,7 @@ export default {
     },
     themeConfig:{
         colors:{
-            primary:"red",
+            primary:"#1890ff",
         },
         styles: {
             h1: {
