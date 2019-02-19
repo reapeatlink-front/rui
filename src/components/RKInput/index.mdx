@@ -1,0 +1,21 @@
+---
+name: RKInput 片假名输入框
+menu: 组件
+route: /RKInput
+---
+
+import { Playground, PropsTable } from 'docz'
+import RKInput from './index';
+import RInput from "../RInput"
+
+# RKInput
+
+<PropsTable of={RInput} />
+
+## 效果展示
+
+<Playground>
+ <RKInput onFocus={()=>{ console.log("focus....") }}
+         helper="我是片假名提示框"/>
+</Playground>
+
